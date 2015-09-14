@@ -135,7 +135,7 @@ def EnduranceRunMenu():
 
 	return oc
 
-@route('/video/giantbomb/videos')
+@route('/video/giantbomb/videos', allow_sync=True)
 def Videos(cat_id=None, query=None, offset=0):
 	oc = ObjectContainer()
 
